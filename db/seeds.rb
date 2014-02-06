@@ -19,3 +19,16 @@ design_skills.each do |skill|
 end
 
 # TODO: create associations between users and skills
+Proficiency.create(user_id: 1, skill_id: 1, years_experience: 0.5, formal_education: 1)
+Proficiency.create(user_id: 1, skill_id: 2, years_experience: 1, formal_education: 0)
+Proficiency.create(user_id: 1, skill_id: 3, years_experience: 2, formal_education: 1)
+Proficiency.create(user_id: 1, skill_id: 4, years_experience: 2.5, formal_education: 0)
+
+Proficiency.create(user_id: 2, skill_id: 8, years_experience: 3, formal_education: 1)
+Proficiency.create(user_id: 2, skill_id: 9, years_experience: 3, formal_education: 0)
+Proficiency.create(user_id: 2, skill_id: 10, years_experience: 0, formal_education: 0)
+
+Proficiency.create(user_id: 3, skill_id: 1, years_experience: 1, formal_education: 1)
+Proficiency.create(user_id: 3, skill_id: 10, years_experience: 2, formal_education: 1)
+
+Proficiency.create(user_id: 4, skill_id: 1, years_experience: 1, formal_education: 0)
