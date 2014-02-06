@@ -56,3 +56,15 @@ post '/users' do
     erb :sign_up
   end
 end
+
+
+#----------- USERS -----------
+
+get '/skills/new' do
+  erb :new_skill
+end
+
+post '/skills' do
+
+  redirect '/'
+end

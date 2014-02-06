@@ -4,9 +4,17 @@
   	<th>
   		<td>Name</td><td>Skill</td><td>Years</td><td>Formal?</td>
   	</th>
-  	<tr>
-  		<td></td>
-  	</tr>
+  	<% @users.each do |user| %>
+	  	<tr>
+	  		<td><%= user.name %></td>
+	  		<td><% user.proficiencies.each do |proficiency| %>
+	  					<%= proficiency.skill.name %>
+	  				<% end %>
+	  		</td>
+	  		<td>&nbsp;</td>
+	  		<td>&nbsp;</td>
+	  	</tr>
+  	<% end %>
   </table>
   <%# TODO: display the skills and proficiency levels for each user ... %>
 </div>
